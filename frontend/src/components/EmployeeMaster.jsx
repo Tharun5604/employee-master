@@ -57,7 +57,8 @@ export default function EmployeeMaster() {
       let age = today.getFullYear() - dob.getFullYear();
       const m = today.getMonth() - dob.getMonth();
       if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) age--;
-      if (age < 18) errs.dob = 'Employee must be at least 18 years old';
+      if (age < 18) errs.dob = 'Employee must be at least 18 years old'
+      alert('Employee must be at least 18 years old');
     }
 
     // DOJ: not future
